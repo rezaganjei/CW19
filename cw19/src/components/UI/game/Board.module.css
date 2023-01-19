@@ -1,0 +1,10 @@
+.cell {
+  border: 1px solid black;
+  margin: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.mainBoard {
+  display: flex;
+}
