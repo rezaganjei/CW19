@@ -6,14 +6,16 @@ const User = (props) => {
   return (
     <>
       <Card>
-        <idv></idv>
+        <div></div>
         <div>
           <label>Plese Enter Your Name</label>
-          <input type={"text"}></input>
+          <input type={"text"}  value={props.inpVal} onChange={e => props.onInpChange(e.currentTarget.value)}/>
         </div>
         <div className={styles.selection}>
           <label>Please Pick a Side</label>
-          <select>
+          <select value={props.selectVal} onChange={e => {
+            props.onSelectChange(e.currentTarget.value)
+          }}>
             <option>X</option>
             <option>O</option>
           </select>
